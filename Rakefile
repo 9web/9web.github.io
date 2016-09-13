@@ -5,7 +5,7 @@ require "bundler/setup"
 require "jekyll"
 
 # Change your GitHub reponame
-GITHUB_REPONAME    = "nandomoreirame/lora"
+GITHUB_REPONAME = "nandomoreirame/nandomoreira-jekyll-theme"
 GITHUB_REPO_BRANCH = "gh-pages"
 
 SOURCE = "source/"
@@ -126,6 +126,68 @@ task :page do
     post.puts "{% include JB/setup %}"
   end
 end # task :page
+
+
+desc "Begin a new category in #{CONFIG['categories']}"
+task :category do
+  abort("rake aborted: '#{CONFIG['categories']}' directory not found.") unless FileTest.directory?(CONFIG['categories'])
+  title = ENV["title"] || "new-category"
+  slug  = mount_slug(title)
+
+  filename = File.join(CONFIG['categories'], "category-#{slug}.html")
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+
+  puts "Creating new category: #{filename}"
+  open(filename, 'w') do |category|
+    category.puts "---"
+    category.puts "layout: category"
+    category.puts "title: \"#{title.gsub(/-/,' ')}\""
+    category.puts "slug: #{slug}"
+    category.puts "permalink: /category/#{slug}/"
+    category.puts "---"
+  end
+
+  puts "Write in categories.yml file"
+  open("#{SOURCE}_data/categories.yml", 'ab+') do |category|
+    category.puts ""
+    category.puts "- slug: #{slug}"
+    category.puts "  name: #{title}"
+  end
+  puts "Successfully created!"
+end # task :category
+
+
+desc "Begin a new tag in #{CONFIG['tags']}"
+task :tag do
+  abort("rake aborted: '#{CONFIG['tags']}' directory not found.") unless FileTest.directory?(CONFIG['tags'])
+  title = ENV["title"] || "new-tag"
+  slug  = mount_slug(title)
+
+  filename = File.join(CONFIG['tags'], "tag-#{slug}.html")
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+
+  puts "Creating new tag: #{filename}"
+  open(filename, 'w') do |tag|
+    tag.puts "---"
+    tag.puts "layout: tag"
+    tag.puts "title: \"#{title.gsub(/-/,' ')}\""
+    tag.puts "slug: #{slug}"
+    tag.puts "permalink: /tag/#{slug}/"
+    tag.puts "---"
+  end
+
+  puts "Write in tags.yml file"
+  open("#{SOURCE}_data/tags.yml", 'ab+') do |tag|
+    tag.puts ""
+    tag.puts "- slug: #{slug}"
+    tag.puts "  name: #{title}"
+  end
+  puts "Successfully created!"
+end # task :tag
 
 def mount_slug(title)
   slug = str_clean(title)
