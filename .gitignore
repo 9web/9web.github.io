@@ -1,4 +1,5 @@
-_site/
-_posts/
-category/
-*~
+_site
+.sass-cache
+.jekyll-metadata
+.vscode
+.idea
