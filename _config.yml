@@ -13,8 +13,8 @@ sass:
   style: compressed
 
 # Site settings
-title: Lora
-description: "A free Jekyll theme"
+title: 九章云极
+description: "DataCanvas"
 email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com"
