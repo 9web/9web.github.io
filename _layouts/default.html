@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ site.title + page.title }}</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 
-    <!-- highlight.js -->
-    <link rel="stylesheet" href="//libs.cncdn.cn/highlight.js/8.4/styles/tomorrow.min.css">
-    <script src="//libs.cncdn.cn/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+  {% include head.html %}
 
-    <!-- CSS -->                       
-    <link rel="stylesheet" href="{{ site.baseurl }}/statics/css/index.css">
-</head>
+  <body>
+     {% include header.html %}
 
-<body>
-    
-    <div class="wrap">          
-    {% include header.html %}    
+    <div class="col-md-12 blog-theme-class">
+          <!-- Top Blog Header -->
+          <div class="row jumb-bot">
+            <div class="col-md-1"></div>
+            <div class="jumbotron jumb-bot-jumbu col-md-10">
+
+              <h1>{{site.title}}</h1>
+              <p>{{site.description}}</p>
+            </div>            
+            <div class="col-md-1"></div>
+          </div>
+    </div>
+    <div class="col-md-12">
         {{ content }}
-    
-        <!--回到顶部-->
-        <a id="returnTop"></a>
-
+    </div>
+    <div class="col-md-12 share-div">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          {% include sharer.html %}
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="col-md-12">
     {% include footer.html %}
     </div>
-
-    <script src="{{ site.url }}/statics/js/jquery.min.js"></script>
-    <script src="{{ site.url }}/statics/js/index.js"></script>
+    <div class="col-md-12">
+    {% include endfooter.html %}
+    </div>
+    {% include include_js.html %}
     
+  </body>
 
-</body>
 </html>
