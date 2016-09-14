@@ -1,42 +1,23 @@
-permalink   : /:categories/:year/:title/
-markdown    : kramdown
-highlighter : pygments
+# Site settings
+title: 'LMY-HOME'  # Your Title
+tagline: '柔弱、无欲，顺乎自然，但却具有强大的生命力'  # A brief tagline for your site
+sidebar_image: /images/cover.jpg
 
-paginate: 2 #6
-comments: true
-paginate_path: "/page/:num"
+encoding: UTF-8
+markdown: kramdown
 
-source: source
-destination: _site
-sass:
-  sass_dir: _scss
-  style: compressed
+paginate: 8
+paginate_path: "page:num"
+
+#pygments: true
+baseurl: ""
+
 
 # Site settings
-title: Lora
-description: "A free Jekyll theme"
-email: your-email@domain.com
-baseurl: "" # the subpath of your site, e.g. /blog/
-#url: "http://yourdomain.com"
-url: "http://nandomoreira.me/lora"
-repository: "https://github.com/nandomoreirame/lora"
-disqus_shortname: "fernandomoreira"
-google_analytics: UA-52446115-1
-
-# social footer
-social:
-  github:
-    slug: github
-    link: http://github.com/nandomoreirame
-  facebook:
-    slug: facebook
-    link: http://facebook.com/fernando.dev
-  twitter:
-    slug: twitter
-    link: http://twitter.com/nandomoreirame
-  instagram:
-    slug: instagram
-    link: http://instagram.com/nandomoreira.me
-  linkedin:
-    slug: linkedin
-    link: http://linkedin.com/in/nandomoreirame
+name:           limingyang2012
+email:          limingyang2012@zju.edu.cn
+uri:            limingyang2012.github.io
+github:         limingyang2012
+twitter:        limingyang2012
+facebook:       limingyang2012
+linkedin:       limingyang2012
