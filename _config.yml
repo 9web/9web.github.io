@@ -1,6 +1,6 @@
 permalink   : /:categories/:year/:title/
 markdown    : kramdown
-highlighter : pygments
+highlight : true
 
 paginate: 2 #6
 comments: true
@@ -23,6 +23,8 @@ repository: "https://github.com/nandomoreirame/lora"
 disqus_shortname: "fernandomoreira"
 google_analytics: UA-52446115-1
 
+
+gems: [jekyll-paginate]
 # social footer
 social:
   github:
@@ -40,3 +42,4 @@ social:
   linkedin:
     slug: linkedin
     link: http://linkedin.com/in/nandomoreirame
+
