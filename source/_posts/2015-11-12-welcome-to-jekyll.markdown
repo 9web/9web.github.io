@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome了的后果发挥"
 date:   2015-11-12 19:19:43
 categories: jekyll update
 comments: true
