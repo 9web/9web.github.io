@@ -5,7 +5,7 @@ require "bundler/setup"
 require "jekyll"
 
 # Change your GitHub reponame
-GITHUB_REPONAME    = "9web.github.io/"
+GITHUB_REPONAME    = "9web/9web.github.io"
 GITHUB_REPO_BRANCH = "master"
 
 SOURCE = "source/"
