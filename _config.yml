@@ -18,8 +18,8 @@ description: "Front end team"
 email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com"
-url: "http://nandomoreira.me/lora"
-repository: "https://github.com/nandomoreirame/lora"
+url: "https://9web.github.io/"
+repository: "https://github.com/9web/9web.github.io"
 disqus_shortname: "fernandomoreira"
 google_analytics: UA-52446115-1
 
