@@ -18,8 +18,8 @@ description: "A free Jekyll theme"
 email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com"
-url: "http://9web.github.io/"
-repository: "https://9web.github.io/"
+url: "http://nandomoreira.me/lora"
+repository: "https://github.com/nandomoreirame/lora"
 disqus_shortname: "fernandomoreira"
 google_analytics: UA-52446115-1
 
@@ -42,8 +42,3 @@ gems: [jekyll-paginate]
 #  linkedin:
 #    slug: linkedin
 #    link: http://linkedin.com/in/nandomoreirame
-
-deploy:
-  type: git
-  repo: https://github.com/9web/9web.github.io.git
-  branch: master
