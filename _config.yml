@@ -42,3 +42,8 @@ gems: [jekyll-paginate]
 #  linkedin:
 #    slug: linkedin
 #    link: http://linkedin.com/in/nandomoreirame
+
+deploy:
+  type: git
+  repo: https://github.com/9web/9web.github.io.git
+  branch: master
