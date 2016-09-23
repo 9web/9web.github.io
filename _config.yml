@@ -2,7 +2,7 @@ permalink   : /:categories/:year/:title/
 markdown    : kramdown
 highlight : true
 
-paginate: 2 #6
+paginate: 5 #6
 comments: true
 paginate_path: "/page/:num"
 
