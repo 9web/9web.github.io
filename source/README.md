@@ -12,7 +12,8 @@ https://9web.github.io/
 3. install Ruby and RubyDevKit: `http://rubyinstaller.org/downloads/`
    （make sure the version consistent）
 4. install jekyll: $gem install jekyll
-5. install Bundle: $ bundle install
+5. install Bundle: $gem install bundle 
+    $ bundle install
 6. Start Jekyll server: `jekyll serve`
 
 Access, [localhost:4000](http://localhost:4000/)
@@ -31,4 +32,3 @@ Access, [localhost:4000](http://localhost:4000/)
 * Create a new post: `rake post title="TITLE OF THE POST"`
 
 ---
-
