@@ -3,7 +3,7 @@ markdown    : kramdown
 highlight : true
 
 paginate: 5 #6
-comments: true
+comments: false
 paginate_path: "/page/:num"
 
 source: source
@@ -13,9 +13,9 @@ sass:
   style: compressed
 
 # Site settings
-title: 北京九章云极科技有限公司
-description: "Front end team"
-email: your-email@domain.com
+title: 9web
+description: "Build great web products"
+email: wangpan@zetyun.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com"
 url: "https://9web.github.io/"
