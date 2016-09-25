@@ -12,7 +12,7 @@ https://9web.github.io/
 3. install Ruby and RubyDevKit: `http://rubyinstaller.org/downloads/`
    （make sure the version consistent）
 4. install jekyll: $gem install jekyll
-5. install Bundle: $gem install bundle 
+5. install Bundle: $gem install bundle
     $ bundle install
 6. Start Jekyll server: `jekyll serve`
 
@@ -34,3 +34,8 @@ Access, [localhost:4000](http://localhost:4000/)
 ---
 
 
+### TODO
+
+1. 支持标签
+2. 评论功能
+3. 分享替换为微信, 微博
