@@ -3,7 +3,7 @@ layout: post
 title: "Stateless component"
 permalink: stateless-component
 date: 2016-09-24 21:17:22
-comments: true
+comments: false
 description: "stateless component"
 keywords: ""
 categories:

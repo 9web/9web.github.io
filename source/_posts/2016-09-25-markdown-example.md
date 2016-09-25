@@ -3,7 +3,7 @@ layout: post
 title: "Markdown 语法示例"
 permalink: markdown-example
 date: 2016-09-24 09:11:10
-comments: true
+comments: false
 description: "Markdown 语法示例"
 keywords: ""
 categories:
