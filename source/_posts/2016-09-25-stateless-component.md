@@ -51,3 +51,8 @@ ReactDOM.render(<HelloMessage name="Mădălina"/>, mountNode);
 这种方式定义的组件因为没有 back instances, 所以没法使用 ref. 如果想要查找这种组件的 DOM node, 可以将他们包装进普通组件里(ES6 class component).
 
 在理想情况下大部分组件应该是 stateless component, 官方推荐尽量使用这种方式定义组件.
+
+
+#### 参考
+
+* [mbracing Functions in React](https://medium.com/javascript-inside/embracing-functions-in-react-d7d558d8bd30?swoff=true#.rh5yqndjd)
